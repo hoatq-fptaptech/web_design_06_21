@@ -1,0 +1,102 @@
+header, section, footer, aside, nav,
+article, figure, figcaption {
+    display: block;}
+body {
+    color: #666666;
+    background-color: #f9f8f6;
+    background-image: url("../img/dark-wood.jpg");
+    background-position: center;
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    border: 2px solid #000000;
+    background-color: #ffffff;}
+
+header {
+    height: 160px;
+    background-image: url(../img/header.jpg);
+}
+h1{
+    height: 130px;
+    width: 940px;
+    text-indent: -2000px; /* dịch text đi bao nhiêu px, -10px: lùi trái 10px*/
+    margin: 0;
+}
+nav{
+    color:#ffffff;
+    background-color: #8e929a;
+}
+nav ul{ /* ul nằm trong khu vực của nav */
+    margin: 0;
+    padding: 5px 0 5px 30px; /* top right bottom left */
+}
+nav ul li{
+    display: inline; /* làm cho các phần tử cạnh nhau */
+    margin-right: 40px;
+}
+nav li a{
+    color:#ffffff;
+    text-decoration: none;
+}
+nav li a.current{ /* vừa là thẻ a vừa có class current */
+    color: #000000;
+}
+section.courses{
+    float: left;
+    width: calc(66.67% - 1px);
+    border-right: 1px solid #cbc4c4;
+    background-color: #ffffff;
+}
+aside.aside{
+    float: right;
+    width: calc(33.33% - 20px);
+    padding:0 0 0 20px;
+    background-color: #ffffff;
+    height: 544px;
+}
+.courses article{
+    float: left;
+    width: 100%;
+}
+.courses article figure{
+    float: left;
+    width: 290px;
+    height: 220px;
+    border: 1px solid #eeeeee;
+    padding: 5px;
+    margin: 20px;
+}
+.courses article figcaption{
+    font-size: 90%;/* nhân với font-size của trang */
+}
+.courses article h2,.courses article h3{
+    font-weight: 400;
+}
+.courses article h2{
+    margin: 30px 0 5px 0;
+    padding: 0;
+}
+.courses article h3{
+    margin: 0 0 10px 0;
+    color: #e55f7b;
+}
+.aside h2,.aside a{
+    color: #e55f7b;
+}
+.aside a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+.footer{
+    font-size: 80%;
+    padding: 10px 0 0 20px;
+    background-color: #8e929a;
+    color: #ffffff;
+}
